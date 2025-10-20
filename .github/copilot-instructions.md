@@ -128,4 +128,4 @@ The project is essentially empty - only basic scaffolding exists. When adding ga
 
 - 可选自动化（建议）：
 
-    - 可使用 `husky` + `commitlint` 强制执行规范（若需要我可以添加示例配置）。
+        - 可使用 `husky` 强制执行本地钩子（如需示例配置可请求）。

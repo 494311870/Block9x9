@@ -33,3 +33,4 @@
 5. 运行成功后，所有 issues 将按顺序创建
 
 详细说明请参考：[docs/create-issues-guide.md](docs/create-issues-guide.md)
+如需我为仓库添加 husky 钩子示例配置，请回复确认，我可以添加示例配置文件。

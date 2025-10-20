@@ -34,4 +34,4 @@
 
 ---
 
-（本模板与 `docs/pr-guidelines.md` 保持一致，PR 检查会在 CI 中运行 commitlint 来校验提交信息格式。）
+（本模板与 `docs/pr-guidelines.md` 保持一致，PR 检查目前不会自动运行 commitlint。）

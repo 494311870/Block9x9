@@ -52,8 +52,8 @@
 
 8. 自动化建议：
 
-   - 建议使用 `husky` + `commitlint` 强制提交信息格式。若需要我可以添加示例配置（`package.json`、`.husky/commit-msg`、`.commitlintrc.json`）。
+   - 建议使用 `husky` 强制提交信息格式的本地钩子。若需要我可以添加示例配置（`package.json`、`.husky/commit-msg`）。
 
 ---
 
-如需我现在添加 `husky` + `commitlint` 示例实现（并更新 `package.json`），回复“添加自动化”。
+如需我现在添加 `husky` 示例实现（并更新 `package.json`），回复“添加自动化”。

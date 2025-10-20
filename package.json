@@ -3,14 +3,5 @@
   "uuid": "adf2eb93-9df9-4fd1-a72a-39fcad0b698e",
   "creator": {
     "version": "3.8.7"
-  }
-  ,
-  "devDependencies": {
-    "husky": "^8.0.0",
-    "@commitlint/cli": "^17.0.0",
-    "@commitlint/config-conventional": "^17.0.0"
-  },
-  "scripts": {
-    "prepare": "husky install"
-  }
+  }  
 }
