@@ -32,6 +32,7 @@ npm run test:coverage
 npm run example              # Board 使用示例
 npm run example:block        # Block 使用示例  
 npm run example:placement    # PlacementManager 使用示例
+npm run example:game         # GameSession 与 CandidateQueue 使用示例
 ```
 
 ### 已实现功能
@@ -58,6 +59,21 @@ npm run example:placement    # PlacementManager 使用示例
   - 得分计算（基础分 + 连消奖励）
   - 详细 API 文档见：[assets/scripts/core/PlacementManager.README.md](assets/scripts/core/PlacementManager.README.md)
 
+- **CandidateQueue 类**：候选块队列管理
+  - 固定容量的候选块槽位（默认 3 个）
+  - 自动/手动补充候选块
+  - 选择并取出候选块
+  - 队列状态查询与重置
+  - 详细 API 文档见：[assets/scripts/core/CandidateQueue.README.md](assets/scripts/core/CandidateQueue.README.md)
+
+- **GameSession 类**：完整游戏会话管理
+  - 整合棋盘、候选队列、生成器和放置管理器
+  - 游戏状态管理（READY/PLAYING/GAME_OVER）
+  - 自动游戏结束检测
+  - 分数统计与步数记录
+  - 支持可重现的游戏（种子）
+  - 详细 API 文档见：[assets/scripts/core/GameSession.README.md](assets/scripts/core/GameSession.README.md)
+
 项目约定：
 
 - 所有游戏脚本放在 `assets/scripts/`（使用 Cocos Creator 的组件和装饰器）。
@@ -71,7 +87,7 @@ npm run example:placement    # PlacementManager 使用示例
 
 - 测试文件：`tests/**/*.test.ts`
 - 运行所有测试：`npm test`
-- 当前测试覆盖：134 个测试，全部通过 ✓
+- 当前测试覆盖：209 个测试，全部通过 ✓
 
 贡献与提交规范：
 
