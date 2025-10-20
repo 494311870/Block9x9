@@ -1,36 +1,5 @@
-name: Commit lint
+name: Commit lint (disabled)
 
-on:
-  push:
-    branches: ["main", "master", "dev"]
-  pull_request:
-    branches: ["main", "master", "dev"]
-
-jobs:
-  commitlint:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # required to get full commit history for commitlint range
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run commitlint for push
-        if: github.event_name == 'push'
-        run: |
-          npx --no-install commitlint --from=${{ github.sha }}~1 --to=${{ github.sha }} || true
-
-      - name: Run commitlint for pull request
-        if: github.event_name == 'pull_request'
-        run: |
-          # commitlint can check the range between base and head
-          npx --no-install commitlint --from=${{ github.event.pull_request.base.sha }} --to=${{ github.event.pull_request.head.sha }}
+# Commitlint workflow has been disabled/removed from this repository.
+# If you want to re-enable commitlint in CI, restore or replace this workflow
+# with steps to install @commitlint and run it against the PR commit range.

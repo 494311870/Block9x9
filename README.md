@@ -20,4 +20,4 @@
 - type 保持英文（例如 `feat`, `fix`, `docs`, `chore`），但提交内容请使用中文。
 - 详细规范见 `docs/commit-guidelines.md`。
 
-如需我为仓库添加 commitlint/husky 配置，请回复确认，我可以添加示例配置文件。
+如需我为仓库添加 husky 钩子示例配置，请回复确认，我可以添加示例配置文件。

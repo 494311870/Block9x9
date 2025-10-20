@@ -24,7 +24,7 @@
    - 不要提交敏感配置或凭证（`.env`、私钥等）。
 
 7. CI 与 自动化
-   - PR 会触发 commitlint 检查，若不合规请根据提示修正提交历史或在本地使用 `git commit --amend` / `git rebase -i` 进行整理。
+   - PR 不会自动触发 commitlint 检查。若你在本地使用 commitlint 或团队启用相应 CI，请按对应流程修正提交历史或在本地使用 `git commit --amend` / `git rebase -i` 进行整理。
 
 8. 合并策略
    - 建议使用 Squash merging 到主分支，或在合并时保留一个语义化的合并提交（由 reviewer 选择）。
