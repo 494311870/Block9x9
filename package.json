@@ -1,7 +1,30 @@
 {
-  "name": "Block9x9",
+  "name": "block9x9",
   "uuid": "adf2eb93-9df9-4fd1-a72a-39fcad0b698e",
   "creator": {
     "version": "3.8.7"
-  }  
+  },
+  "version": "1.0.0",
+  "description": "简短说明：Block9x9 是基于 Cocos Creator 3.8.7 的 TypeScript 游戏项目骨架（当前为空项目）。",
+  "main": ".commitlintrc.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "example": "ts-node examples/board-usage.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
 }

@@ -1,18 +1,57 @@
 # Block9x9
 
-简短说明：Block9x9 是基于 Cocos Creator 3.8.7 的 TypeScript 游戏项目骨架（当前为空项目）。
+简短说明：Block9x9 是基于 Cocos Creator 3.8.7 的 TypeScript 游戏项目，实现了经典的 9x9 木块拼图游戏。
 
-快速开始：
+## 快速开始
+
+### 游戏开发
 
 1. 安装并打开 Cocos Creator 3.8.7 编辑器。
-2. 在编辑器中打开本项目目录 (`e:/Game/AIGame/Block9x9`)。
+2. 在编辑器中打开本项目目录。
 3. 在 `assets/` 下添加场景（`assets/scenes/`）、脚本（`assets/scripts/`）和资源（`assets/resources/`）。
 4. 使用编辑器的构建面板生成构建输出。
 
+### 核心逻辑开发与测试
+
+项目包含了核心游戏逻辑的 TypeScript 实现和单元测试：
+
+```bash
+# 安装依赖
+npm install
+
+# 运行测试
+npm test
+
+# 监听模式运行测试
+npm run test:watch
+
+# 生成测试覆盖率报告
+npm run test:coverage
+```
+
+### 已实现功能
+
+- **Board 类**：9x9 棋盘数据结构
+  - 初始化和重置棋盘
+  - 放置/移除方块
+  - 检测满行/满列
+  - 获取棋盘状态
+  - 详细 API 文档见：[assets/scripts/core/README.md](assets/scripts/core/README.md)
+
 项目约定：
 
-- 所有游戏脚本放在 `assets/`（使用 Cocos Creator 的组件和装饰器）。
+- 所有游戏脚本放在 `assets/scripts/`（使用 Cocos Creator 的组件和装饰器）。
+- 核心逻辑类（不依赖 Cocos Creator API）也放在 `assets/scripts/core/`。
+- 单元测试放在 `tests/` 目录，镜像 `assets/scripts/` 的结构。
 - 不要在 `library/`, `temp/`, `profiles/`, `settings/` 中直接编辑文件（这些是编辑器生成的缓存/配置）。
+
+## 测试
+
+项目使用 Jest 进行单元测试：
+
+- 测试文件：`tests/**/*.test.ts`
+- 运行所有测试：`npm test`
+- 当前测试覆盖：32 个测试，全部通过 ✓
 
 贡献与提交规范：
 
