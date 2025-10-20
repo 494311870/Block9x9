@@ -28,6 +28,12 @@ jobs:
       - name: Install dependencies
         run: npm install @octokit/rest
       
+      - name: Ensure required labels exist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node .github/scripts/ensure-labels.js
+      
       - name: Create issues from markdown
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
