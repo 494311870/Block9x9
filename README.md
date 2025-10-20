@@ -27,6 +27,11 @@ npm run test:watch
 
 # 生成测试覆盖率报告
 npm run test:coverage
+
+# 运行示例代码
+npm run example              # Board 使用示例
+npm run example:block        # Block 使用示例  
+npm run example:placement    # PlacementManager 使用示例
 ```
 
 ### 已实现功能
@@ -37,6 +42,21 @@ npm run test:coverage
   - 检测满行/满列
   - 获取棋盘状态
   - 详细 API 文档见：[assets/scripts/core/README.md](assets/scripts/core/README.md)
+
+- **Block 类**：木块模型与形状定义
+  - 支持多种预定义形状（单格、直线、L形、方块、T形等）
+  - 方块旋转、克隆、序列化
+  - 详细 API 文档见：[assets/scripts/core/Block.README.md](assets/scripts/core/Block.README.md)
+
+- **BlockGenerator 类**：随机方块生成器
+  - 支持随机生成和种子控制
+  - 详细 API 文档见：[assets/scripts/core/BlockGenerator.README.md](assets/scripts/core/BlockGenerator.README.md)
+
+- **PlacementManager 类**：放置判定与消除逻辑
+  - 放置合法性校验
+  - 自动检测并消除满行/满列
+  - 得分计算（基础分 + 连消奖励）
+  - 详细 API 文档见：[assets/scripts/core/PlacementManager.README.md](assets/scripts/core/PlacementManager.README.md)
 
 项目约定：
 
@@ -51,7 +71,7 @@ npm run test:coverage
 
 - 测试文件：`tests/**/*.test.ts`
 - 运行所有测试：`npm test`
-- 当前测试覆盖：32 个测试，全部通过 ✓
+- 当前测试覆盖：134 个测试，全部通过 ✓
 
 贡献与提交规范：
 
