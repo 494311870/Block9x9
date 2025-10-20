@@ -1,5 +1,0 @@
-name: Commit lint (disabled)
-
-# Commitlint workflow has been disabled/removed from this repository.
-# If you want to re-enable commitlint in CI, restore or replace this workflow
-# with steps to install @commitlint and run it against the PR commit range.
