@@ -20,4 +20,17 @@
 - type 保持英文（例如 `feat`, `fix`, `docs`, `chore`），但提交内容请使用中文。
 - 详细规范见 `docs/commit-guidelines.md`。
 
+## 批量创建 Issues
+
+本项目提供了从 `docs/issues-list.md` 批量创建 GitHub issues 的自动化工具。
+
+### 使用方法
+
+1. 进入 GitHub 仓库的 **Actions** 标签页
+2. 选择 **"Create Issues from Markdown"** workflow
+3. 点击 **"Run workflow"**
+4. 可选择 "Dry run" 模式先预览（不实际创建）
+5. 运行成功后，所有 issues 将按顺序创建
+
+详细说明请参考：[docs/create-issues-guide.md](docs/create-issues-guide.md)
 如需我为仓库添加 husky 钩子示例配置，请回复确认，我可以添加示例配置文件。
