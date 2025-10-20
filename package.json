@@ -15,7 +15,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "example": "ts-node examples/board-usage.ts"
+    "example": "ts-node examples/board-usage.ts",
+    "example:block": "ts-node examples/block-usage.ts"
   },
   "keywords": [],
   "author": "",
