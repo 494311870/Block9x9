@@ -1,0 +1,97 @@
+
+#///////////////////////////
+# Cocos Creator Project
+#///////////////////////////
+library/
+temp/
+local/
+build/
+profiles/
+native/
+settings/
+
+# Auto-generated files
+project.json
+.uuid
+
+#//////////////////////////
+# NPM
+#//////////////////////////
+node_modules/
+package-lock.json
+yarn.lock
+
+#//////////////////////////
+# OS Files
+#//////////////////////////
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Linux
+*~
+.directory
+
+#//////////////////////////
+# IDEs and Editors
+#//////////////////////////
+# VSCode
+.vscode/
+*.code-workspace
+
+# WebStorm/IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+#//////////////////////////
+# Build and Distribution
+#//////////////////////////
+dist/
+out/
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+#//////////////////////////
+# Runtime and Cache
+#//////////////////////////
+.cache/
+*.tmp
+*.temp
+
+#//////////////////////////
+# Environment Files
+#//////////////////////////
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+#//////////////////////////
+# Backup Files
+#//////////////////////////
+*.bak
+*.backup
+*.old
+*.orig
