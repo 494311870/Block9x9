@@ -33,6 +33,7 @@ npm run example              # Board 使用示例
 npm run example:block        # Block 使用示例  
 npm run example:placement    # PlacementManager 使用示例
 npm run example:game         # GameSession 与 CandidateQueue 使用示例
+npm run example:ui           # UI 组件使用示例
 ```
 
 ### 已实现功能
@@ -73,6 +74,15 @@ npm run example:game         # GameSession 与 CandidateQueue 使用示例
   - 分数统计与步数记录
   - 支持可重现的游戏（种子）
   - 详细 API 文档见：[assets/scripts/core/GameSession.README.md](assets/scripts/core/GameSession.README.md)
+
+- **UI 组件**：Cocos Creator 游戏界面组件
+  - **BoardView**：9x9 棋盘可视化组件
+  - **CandidateView**：候选块显示组件
+  - **ScoreHUD**：分数和步数显示组件
+  - **GameOverDialog**：游戏结束对话框
+  - **GameController**：游戏主控制器，整合所有 UI 和逻辑
+  - 详细文档见：[assets/scripts/components/README.md](assets/scripts/components/README.md)
+  - 设置指南见：[docs/ui-setup-guide.md](docs/ui-setup-guide.md)
 
 项目约定：
 
