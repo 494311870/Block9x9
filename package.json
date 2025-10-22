@@ -19,7 +19,9 @@
     "example:block": "ts-node examples/block-usage.ts",
     "example:placement": "ts-node examples/placement-manager-usage.ts",
     "example:game": "ts-node examples/game-session-usage.ts",
-    "example:ui": "ts-node examples/ui-components-usage.ts"
+    "example:ui": "ts-node examples/ui-components-usage.ts",
+    "example:scene": "ts-node examples/scene-utils-usage.ts",
+    "generate:ui": "ts-node examples/generate-ui-scene.ts"
   },
   "keywords": [],
   "author": "",
