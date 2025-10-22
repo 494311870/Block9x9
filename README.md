@@ -34,6 +34,8 @@ npm run example:block        # Block 使用示例
 npm run example:placement    # PlacementManager 使用示例
 npm run example:game         # GameSession 与 CandidateQueue 使用示例
 npm run example:ui           # UI 组件使用示例
+npm run example:scene        # SceneUtils 使用示例
+npm run generate:ui          # 生成完整 UI 场景结构
 ```
 
 ### 已实现功能
@@ -84,6 +86,15 @@ npm run example:ui           # UI 组件使用示例
   - 详细文档见：[assets/scripts/components/README.md](assets/scripts/components/README.md)
   - 设置指南见：[docs/ui-setup-guide.md](docs/ui-setup-guide.md)
 
+- **SceneUtils 工具**：场景文件编程修改工具
+  - JSON 格式化工具（紧凑格式 ↔ 人类友好格式）
+  - SceneBuilder 类用于构建场景节点结构
+  - 场景操作函数（查找节点、添加子节点、添加组件）
+  - 支持 AI 辅助场景修改工作流
+  - API 文档见：[assets/scripts/utils/README.md](assets/scripts/utils/README.md)
+  - AI 使用指南见：[docs/ai-scene-modification-guide.md](docs/ai-scene-modification-guide.md)
+  - 解决方案说明见：[docs/scene-modification-solution.md](docs/scene-modification-solution.md)
+
 项目约定：
 
 - 所有游戏脚本放在 `assets/scripts/`（使用 Cocos Creator 的组件和装饰器）。
@@ -97,7 +108,7 @@ npm run example:ui           # UI 组件使用示例
 
 - 测试文件：`tests/**/*.test.ts`
 - 运行所有测试：`npm test`
-- 当前测试覆盖：209 个测试，全部通过 ✓
+- 当前测试覆盖：239 个测试，全部通过 ✓
 
 贡献与提交规范：
 
