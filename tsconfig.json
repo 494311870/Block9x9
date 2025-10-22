@@ -6,11 +6,19 @@
     "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
+  "experimentalDecorators": true,
+  "emitDecoratorMetadata": true,
+  "useDefineForClassFields": false,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "declaration": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "typeRoots": [
+      "typings",
+      "temp/declarations",
+      "./node_modules/@types"
+    ]
   },
   "include": [
     "assets/**/*",
@@ -21,7 +29,7 @@
     "dist",
     "build",
     "library",
-    "temp",
+    "local",
     "local"
   ]
 }
